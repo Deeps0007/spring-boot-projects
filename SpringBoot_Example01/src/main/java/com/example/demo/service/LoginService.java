@@ -2,7 +2,7 @@ package com.example.demo.service;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.controller.Authentication;
+import com.example.demo.model.Authentication;
 import com.example.demo.model.LoginUserObject;
 
 @Service
@@ -17,7 +17,7 @@ public class LoginService implements LoginServiceInterface{
 
 		if("deeps".equals(lo.getUsername()) && "123".equals(lo.getPassword()))
 		{
-			System.out.println("user authenticayted");
+			System.out.println("user authenticated");
 			response.setAuth(true);
 			response.setMsg("Username and password valid!!");
 		}
